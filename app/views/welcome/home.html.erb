@@ -1,5 +1,72 @@
-<h1> this is the root welcome page </h1>
+<h4 class="ui center aligned medium icon header">
+  <i class="blue circular chat icon"></i>
+  Say something
+</h4>
 
-<p>
-<%= link_to 'Log in here', login_path %>
-</p>
+<div class="ui two column grid">
+  <div class="twelve wide column">
+    <div class="ui fluid raised blue card chatbox">
+
+      <div class="content">
+        <div class="ui feed">
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                 <em>Elliot Fu</em> I like to play soccer.
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                 <em>Stevie Feliciano</em> me too!
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                 <em>Helen Troy</em> Not me.
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                 <em>Christian Rocha</em> Sometimes I do.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="extra content">
+        <form class="ui reply form">
+          <div class="field">
+            <div class="ui fluid icon input">
+              <input type="text" placeholder="Enter a message...">
+              <i class="link edit icon"></i>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="four wide column">
+    <div class="ui fluid raised blue card chatbox">
+      <div class="content">
+        <div class="ui inverted vertical menu">
+          <a class="active item">
+            Home
+          </a>
+          <a class="item">
+            Messages
+          </a>
+          <a class="item">
+            Friends
+          </a>
+        </div>
+      </div>
+  </div>
+
+</div>
