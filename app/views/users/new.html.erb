@@ -1,0 +1,13 @@
+<h1 align="center"> Sign up</h1>
+
+
+  <%= form_for(:user, html: { class: "ui form", role: "form"}, url: signup_path) do |f| %>
+  <div class="field">
+      <%= f.label :username, placeholder: "username" %>
+      <%= f.text_field :username, placeholder: "Username" %>
+  </div>
+  <div class="field">
+    <%= f.label :password, "Password", class: "field" %>
+    <%= f.password_field :password, placeholder: "Password", autocomplete: "off" %>
+    <%= f.submit :Submit, class: "ui blue submit button" %>
+  <% end %>
